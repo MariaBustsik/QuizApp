@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizApp.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Label Text="УГАДАЙ СТОЛИЦУ" FontSize="Title" HorizontalOptions="Center"/>
+        <Button x:Name="buttonStartQuiz" Text="Начать тест" Clicked="buttonStartQuiz_Clicked"/>
+        <StackLayout Orientation="Horizontal" >
+            <Label Text="1 вопрос - " FontSize="Medium"/>
+            <Label x:Name="labelQ1Answer" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="2 вопрос - " FontSize="Medium"/>
+            <Label x:Name="labelQ2Answer" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="3 вопрос - " FontSize="Medium"/>
+            <Label x:Name="labelQ3Answer" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="4 вопрос - " FontSize="Medium"/>
+            <Label x:Name="labelQ4Answer" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout x:Name="stackPobPic">
+            <Image x:Name="imagePob" Source="floss.png"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
