@@ -20,7 +20,7 @@ namespace QuizApp
         async void buttonStartQuiz_Clicked(object sender, EventArgs e)
         {
             RefreshAnswers();
-            // QUESTION 1
+            // Вопрос 1
             string q1Answer = await DisplayActionSheet("Столица Австрии? ", "Отмена", null, "Стамбул", "Рига", "Вена");
             if (q1Answer == "Вена")
             {
@@ -37,7 +37,7 @@ namespace QuizApp
                 labelQ1Answer.Text = "Неверно, правильный ответ - Вена";
             }
 
-            // QUESTION 2
+            // Вопрос 2
             string q2Answer = await DisplayActionSheet("Столица Эстонии? ", "Отмена", null, "Таллинн", "Вильнюс", "Москва");
             if (q2Answer == "Таллинн")
             {
@@ -54,7 +54,7 @@ namespace QuizApp
                 labelQ2Answer.Text = "Неверно, правильный ответ - Таллинн";
             }
 
-            // QUESTION 3
+            // Вопрос 3
             string q3Answer = await DisplayActionSheet("Столица Латвии? ", "Отмена", null, "Барселона", "Париж", "Рига");
             if (q3Answer == "Рига")
             {
@@ -71,7 +71,7 @@ namespace QuizApp
                 labelQ3Answer.Text = "Неверно, правильный ответ - Рига";
             }
 
-            // QUESTION 4
+            // Вопрос 4
             string q4Answer = await DisplayActionSheet("Столица Франции? ", "Отмена", null, "Вильнюс", "Париж", "Малага");
             if (q4Answer == "Париж")
             {
